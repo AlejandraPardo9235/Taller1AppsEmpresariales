@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Lista de Materias</title>
+</head>
+<body>s
+    <h1>Lista de Materias</h1>
+    <table>
+        <tr>
+            
+            <th>Nombre</th>
+            <th>Codigo</th>
+            <th>Jornada</th>
+           
+            
+        </tr>
+        <tr th:each="materia : ${materias}">
+			<td th:text="${materia.nombre}"></td>
+            <td th:text="${materia.codigo}"></td>
+            <td th:text="${materia.jornada}"></td>
+      
+
+        </tr>
+    </table>
+</body>
+</html>
